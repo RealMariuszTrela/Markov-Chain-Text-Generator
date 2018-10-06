@@ -35,7 +35,7 @@ int main()
     srand(time(NULL));
     std::ifstream towns_input("towns.txt"), sherlock_input("sherlock_holmes.txt");
     Markov_generator::Generator towns(towns_input, counter_for_towns, 3, 3, 1);
-    Markov_generator::Generator sherlock(sherlock_input, counter_for_sherlock, 2, 2, 0);
+    Markov_generator::Generator sherlock(sherlock_input, counter_for_sherlock, 4, 2, 0);
     std::cout << "Towns\n";
     for(int i=0; i<10; ++i)
     {
